@@ -10,10 +10,10 @@ exports.handler = function(event, context) {
       context.done(err, null);
     }
 
-    var numInstances = data.Reservations[0].Instances.length;
+    var numInstances = data.Reservations.length;
 
     var random = Math.floor(Math.random() * numInstances);
-    var target = data.Reservations[0].Instances[random];
+    var target = data.Reservations[random].Instances[0];
     console.log('Going to terminate instance with id = %s', target.InstanceId);
 
     ec2.terminateInstances({InstanceIds:[target.InstanceId]}, function(err, data) {
