@@ -1,0 +1,28 @@
+{
+  "name": "chaos-lambda",
+  "version": "1.0.0",
+  "description": "Chaos Monkey built with 2015 technology (AWS Lambda)",
+  "main": "chaos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node-lambda deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassy/chaos-lambda.git"
+  },
+  "keywords": [
+    "chaos",
+    "monkey",
+    "reliability"
+  ],
+  "author": "Hassy Veldstra <h@veldstra.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hassy/chaos-lambda/issues"
+  },
+  "homepage": "https://github.com/hassy/chaos-lambda#readme",
+  "dependencies": {
+    "node-lambda": "0.7.1"
+  }
+}
