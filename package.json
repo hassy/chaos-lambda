@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/hassy/chaos-lambda#readme",
   "dependencies": {
-    "node-lambda": "0.7.1"
+    "node-lambda": "0.7.1",
+    "ssh2": "^0.4.11"
   }
 }
